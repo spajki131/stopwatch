@@ -2,8 +2,8 @@ const start = document.querySelector("div.start");
 const pause = document.querySelector("div.pause");
 const reset = document.querySelector("div.reset");
 const rounds = document.querySelector("div.round");
-const time = document.querySelector("div.time");
-const list = document.querySelector("div.rounds ul");
+const time = document.querySelector("p.time");
+const list = document.querySelector("section.rounds ul");
 
 let flag = false;
 let ms = 0;
@@ -63,7 +63,7 @@ const startTime = function () {
 const roundsList = function () {
   if (actualTime) {
     const li = document.createElement("li");
-    li.textContent = "Międzyczas " + counter + " — " + actualTime;
+    li.textContent = "Lap time " + counter + " — " + actualTime;
     list.appendChild(li);
     counter++;
     //funckja usuwa wszystkie elementy listy

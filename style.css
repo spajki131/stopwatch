@@ -10,35 +10,34 @@ body {
 }
 
 div.wrapper {
-  min-height: 95vh;
   width: 95vw;
   margin: 2.5vh auto;
-  color: white;
+  min-height: 95vh;
   background-color: rgb(36, 34, 34);
   border-radius: 15px;
   box-shadow: 2px 7px 5px 0px black;
-  font-weight: light;
 }
 
-h1.stoper {
+h1.name {
   text-align: center;
   padding: 70px;
   font-size: 70px;
+  color: white;
   text-shadow: 4px 4px 0px black;
   letter-spacing: 1px;
 }
 
-div.time {
+p.time {
   text-align: center;
   font-size: 90px;
   color: rgb(220, 50, 50);
 }
 
-div.time span {
+p.time span {
   font-size: 60px;
 }
 
-div.menu {
+nav.menu {
   display: flex;
   justify-content: space-evenly;
   width: 80%;
@@ -46,7 +45,7 @@ div.menu {
   margin-top: 100px;
 }
 
-div.menu div {
+nav.menu div {
   position: relative;
   width: 180px;
   height: 80px;
@@ -57,7 +56,7 @@ div.menu div {
   transition: 0.3s;
 }
 
-div.menu div i {
+nav.menu div i {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -65,29 +64,29 @@ div.menu div i {
   font-size: 45px;
 }
 
-div.menu div:hover {
+nav.menu div:hover {
   background-color: rgb(143, 26, 26);
   color: #fff;
 }
 
-div.rounds {
+section.rounds {
   width: 800px;
   margin: 50px auto 0 auto;
   padding: 0 40px 40px 40px;
 }
 
-div.rounds ul {
+section.rounds ul {
   font-size: 40px;
   color: white;
 }
 
-div.rounds ul li {
+section.rounds ul li {
   list-style: none;
   letter-spacing: 2px;
   padding: 10px;
   text-align: center;
 }
 
-div.rounds ul li:nth-child(even) {
-  color: red;
+section.rounds ul li:nth-child(even) {
+  color: rgb(220, 50, 50);
 }
