@@ -20,7 +20,7 @@ div.wrapper {
 
 h1.name {
   text-align: center;
-  padding: 70px;
+  padding: 5vh;
   font-size: 70px;
   color: white;
   text-shadow: 4px 4px 0px black;
@@ -70,7 +70,6 @@ nav.menu div:hover {
 }
 
 section.rounds {
-  width: 800px;
   margin: 50px auto 0 auto;
   padding: 0 40px 40px 40px;
 }
@@ -89,4 +88,50 @@ section.rounds ul li {
 
 section.rounds ul li:nth-child(even) {
   color: rgb(220, 50, 50);
+}
+
+@media (max-width: 1366px) {
+  h1.name {
+    font-size: 60px;
+  }
+
+  p.time {
+    font-size: 60px;
+  }
+
+  p.time span {
+    font-size: 40px;
+  }
+
+  nav.menu div {
+    width: 160px;
+    height: 70px;
+  }
+
+  nav.menu div i {
+    font-size: 35px;
+  }
+
+  section.rounds ul {
+    font-size: 30px;
+  }
+
+  section.rounds ul li {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 1024px) {
+  nav.menu div {
+    width: 140px;
+    height: 60px;
+  }
+
+  nav.menu div i {
+    font-size: 30px;
+  }
+
+  section.rounds ul {
+    font-size: 27px;
+  }
 }
