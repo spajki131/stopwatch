@@ -135,3 +135,44 @@ section.rounds ul li:nth-child(even) {
     font-size: 27px;
   }
 }
+
+@media (orientation: portrait) and (max-width: 375px) {
+  p.time {
+    padding-top: 25px;
+    font-size: 70px;
+  }
+
+  p.time span {
+    font-size: 45px;
+  }
+
+  nav.menu {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 70px;
+    background-color: green;
+    padding: 20px;
+  }
+
+  nav.menu div {
+    width: 40vw;
+    padding: 30px;
+    border: 2px solid rgb(143, 26, 26);
+    color: #aaa;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  nav.menu div i {
+    font-size: 30px;
+  }
+
+  nav.menu div:hover {
+    background-color: rgb(143, 26, 26);
+    color: #fff;
+  }
+}
