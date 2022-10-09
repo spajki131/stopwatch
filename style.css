@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  background-color: rgb(56, 56, 56);
+}
+
+div.wrapper {
+  min-height: 95vh;
+  width: 95vw;
+  margin: 2.5vh auto;
+  color: white;
+  background-color: rgb(36, 34, 34);
+  border-radius: 15px;
+  box-shadow: 2px 7px 5px 0px black;
+  font-weight: light;
+}
+
+h1.stoper {
+  text-align: center;
+  padding: 70px;
+  font-size: 70px;
+  text-shadow: 4px 4px 0px black;
+  letter-spacing: 1px;
+}
+
+div.time {
+  text-align: center;
+  font-size: 90px;
+  color: rgb(220, 50, 50);
+}
+
+div.time span {
+  font-size: 60px;
+}
+
+div.menu {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+div.menu div {
+  position: relative;
+  width: 180px;
+  height: 80px;
+  border: 2px solid rgb(143, 26, 26);
+  color: #aaa;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+div.menu div i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 45px;
+}
+
+div.menu div:hover {
+  background-color: rgb(143, 26, 26);
+  color: #fff;
+}
+
+div.rounds {
+  width: 800px;
+  margin: 50px auto 0 auto;
+  padding: 0 40px 40px 40px;
+}
+
+div.rounds ul {
+  font-size: 40px;
+  color: white;
+}
+
+div.rounds ul li {
+  list-style: none;
+  letter-spacing: 2px;
+  padding: 10px;
+  text-align: center;
+}
+
+div.rounds ul li:nth-child(even) {
+  color: red;
+}
