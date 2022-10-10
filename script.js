@@ -37,7 +37,7 @@ function interval() {
   };
   const resetTime = function () {
     pauseTime();
-    time.textContent = "00:00:00";
+    time.innerHTML = `00:00.<span>00</span>`;
     ms = 0;
     s = 0;
     min = 0;
