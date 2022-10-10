@@ -58,12 +58,8 @@ const startTime = function () {
 const roundsList = function () {
   if (actualTime) {
     const li = document.createElement("li");
-    const removeLap = document.createElement("button");
     li.textContent = "Lap time " + counter + " — " + actualTime;
-    removeLap.textContent = "X";
     list.appendChild(li);
-    li.appendChild(removeLap);
-    removeLap.classList.add("removeLapBtn");
     counter++;
     const removeList = function () {
       list.removeChild(li);
