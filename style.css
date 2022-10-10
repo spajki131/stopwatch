@@ -90,6 +90,23 @@ section.rounds ul li:nth-child(even) {
   color: rgb(220, 50, 50);
 }
 
+button.removeLapBtn {
+  padding: 5px 15px;
+  font-size: 32px;
+  margin: 0 0 5px 20px;
+  background-color: rgb(36, 34, 34);
+  color: #aaa;
+  border: 2px solid rgb(143, 26, 26);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+section.rounds ul li:nth-child(even) button {
+  color: rgb(220, 50, 50);
+  border: 2px solid #aaa;
+}
+
 @media (max-width: 1024px) {
   nav.menu div {
     width: 160px;
