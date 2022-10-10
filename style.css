@@ -90,19 +90,7 @@ section.rounds ul li:nth-child(even) {
   color: rgb(220, 50, 50);
 }
 
-@media (max-width: 1366px) {
-  h1.name {
-    font-size: 60px;
-  }
-
-  p.time {
-    font-size: 60px;
-  }
-
-  p.time span {
-    font-size: 40px;
-  }
-
+@media (max-width: 1024px) {
   nav.menu div {
     width: 160px;
     height: 70px;
@@ -115,28 +103,25 @@ section.rounds ul li:nth-child(even) {
   section.rounds ul {
     font-size: 30px;
   }
-
-  section.rounds ul li {
-    padding: 5px;
-  }
 }
 
-@media (max-width: 1024px) {
-  nav.menu div {
-    width: 140px;
-    height: 60px;
+@media (orientation: portrait) and (max-width: 540px) {
+  div.wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 100vh;
+    min-width: 100vw;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: 0;
   }
 
-  nav.menu div i {
-    font-size: 30px;
+  h1.name {
+    font-size: 50px;
   }
 
-  section.rounds ul {
-    font-size: 27px;
-  }
-}
-
-@media (orientation: portrait) and (max-width: 375px) {
   p.time {
     padding-top: 25px;
     font-size: 70px;
@@ -149,30 +134,38 @@ section.rounds ul li:nth-child(even) {
   nav.menu {
     display: flex;
     justify-content: space-between;
-    align-content: flex-start;
     flex-wrap: wrap;
     width: 100%;
     margin-top: 70px;
-    background-color: green;
     padding: 20px;
   }
 
   nav.menu div {
     width: 40vw;
     padding: 30px;
-    border: 2px solid rgb(143, 26, 26);
-    color: #aaa;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
+    margin: 10px 0;
   }
 
   nav.menu div i {
     font-size: 30px;
   }
+}
 
-  nav.menu div:hover {
-    background-color: rgb(143, 26, 26);
-    color: #fff;
+@media (orientation: portrait) and (max-width: 280px) {
+  h1.name {
+    font-size: 40px;
+  }
+
+  section.rounds {
+    margin: 10px auto 0 auto;
+    padding: 0 30px 30px 30px;
+  }
+
+  section.rounds ul {
+    font-size: 25px;
+  }
+
+  nav.menu {
+    margin-top: 30px;
   }
 }
